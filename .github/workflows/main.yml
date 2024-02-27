@@ -18,6 +18,15 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v2
 
+    - name: Output secrets
+      run: |
+        echo "DEPLOY_REMOTE_PATH: ${{ secrets.DEPLOY_REMOTE_PATH }}"
+        echo "DEPLOY_REMOTE_HOST: ${{ secrets.DEPLOY_REMOTE_HOST }}"
+        echo "DEPLOY_REMOTE_PORT: ${{ secrets.DEPLOY_REMOTE_PORT }}"
+        echo "DEPLOY_REMOTE_USER: ${{ secrets.DEPLOY_REMOTE_USER }}"
+        echo "DEPLOY_REMOTE_KEY: ${{ secrets.DEPLOY_REMOTE_KEY }}"
+
+
     - name: rsync deployments
       uses: burnett01/rsync-deployments@5.2
       with:
