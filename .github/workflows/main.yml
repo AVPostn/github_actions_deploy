@@ -23,8 +23,8 @@ jobs:
       with:
         switches: -avzrO --no-perms
         path: .
-        remote_path: ${{ secrets[DEPLOY_REMOTE_PATH_NAME] }}
-        remote_host: ${{ secrets[DEPLOY_REMOTE_HOST_NAME] }}
-        remote_port: ${{ secrets[DEPLOY_REMOTE_PORT_NAME] }}
-        remote_user: ${{ secrets[DEPLOY_REMOTE_USER_NAME] }}
-        remote_key: ${{ secrets[DEPLOY_REMOTE_KEY_NAME] }}
+        remote_path: ${{ secrets.DEPLOY_REMOTE_PATH_NAME }}
+        remote_host: ${{ secrets.DEPLOY_REMOTE_HOST_NAME }}
+        remote_port: ${{ secrets.DEPLOY_REMOTE_PORT_NAME }}
+        remote_user: ${{ secrets.DEPLOY_REMOTE_USER_NAME }}
+        remote_key: ${{ secrets.DEPLOY_REMOTE_KEY_NAME }}
