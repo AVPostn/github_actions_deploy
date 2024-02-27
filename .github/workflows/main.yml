@@ -1,4 +1,4 @@
-name: Cs-Cart deploy
+name: rsync_deploy
 
 on:
   push:
