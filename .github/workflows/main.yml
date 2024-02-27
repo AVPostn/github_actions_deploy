@@ -20,6 +20,7 @@ jobs:
 
     - name: Output secrets
       run: |
+        env
         echo "DEPLOY_REMOTE_PATH: ${{ secrets.DEPLOY_REMOTE_PATH }}"
         echo "DEPLOY_REMOTE_HOST: ${{ secrets.DEPLOY_REMOTE_HOST }}"
         echo "DEPLOY_REMOTE_PORT: ${{ secrets.DEPLOY_REMOTE_PORT }}"
